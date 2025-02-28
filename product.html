@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind CSS CDN link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <title>Product page</title>
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <nav class="bg-green-100 p-3 flex items-center justify-between  sticky top-0 shadow-xl z-10">
+        <h1 class="text-xl">GREENDEN</h1>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="h-6 w-6  md:hidden ">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        <ul class="gap-5 hidden md:flex">
+            <li class="text-gray-600 hover:underline hover:text-black"><a href="./index.html">Home</a></li>
+            <li class="text-gray-600 hover:underline hover:text-black"><a href="./product.html">Product</a></li>
+            <li class="text-gray-600 hover:underline hover:text-black"><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Products -->
+     <section class="p-4 text-center">
+     <h2 class="font-bold text-3xl mt-2">Our Products</h2>
+     <input type="text" placeholder="Search for a Product..." class="border border-black p-2 m-5 w-8/12">
+     <div class="grid grid-cols-2 md:grid-cols-4 p-4 items-center justify-center gap-6">
+        <div>
+            <img src="./Images/product_1.png" alt="Zebra Plant" class="inline transform hover:-translate-y-2" >
+            <p>Zebra Plant</p>
+            <p>$20</p>
+        </div>
+        <div>
+            <img src="./Images/product_2.png" alt="String of Pearls" class="inline transform hover:-translate-y-2">
+            <p>String of Pearls</p>
+            <p>$30</p>
+        </div>
+        <div>
+            <img src="./Images/product_3.png" alt="Ghost Orchid" class="inline transform hover:-translate-y-2">
+            <p>Ghost Orchid</p>
+            <p>$25</p>
+        </div>
+        <div>
+            <img src="./Images/product_4.png" alt="Corpse Flower" class="inline transform hover:-translate-y-2">
+            <p>Corpse Flower</p>
+            <p>$15</p>
+        </div>
+        <div>
+            <img src="./Images/product_5.png" alt="Dragon Tree" class="inline transform hover:-translate-y-2">
+            <p>Dragon Tree</p>
+            <p>$45</p>
+        </div>
+        <div>
+            <img src="./Images/product_6.png" alt="Pitcher Plant" class="inline transform hover:-translate-y-2">
+            <p>Pitcher Plant</p>
+            <p>$32</p>
+        </div>
+        <div>
+            <img src="./Images/product_7.png" alt="Sensitive Plant" class="inline transform hover:-translate-y-2">
+            <p>Sensitive Plant</p>
+            <p>$25</p>
+        </div>
+        <div>
+            <img src="./Images/product_8.png" alt="Baobab Tree" class="inline transform hover:-translate-y-2">
+            <p>Baobab Tree</p>
+            <p>$30</p>
+        </div>
+
+     </div>
+     </section>
+     <!-- Footer -->
+     <div class="bg-green-100 p-10 flex flex-col gap-5">
+        <h1 class="text-4xl font-bold">Greenden</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto reprehenderit corporis atque incidunt corrupti nihil?</p>
+        <p>&copy;2025 Greenday.com</p>
+    </div>
+
+
+</body>
+
+</html>
