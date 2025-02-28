@@ -2,11 +2,11 @@ GreenDen
 
 GreenDen is a simple and elegant website built using HTML and Tailwind CSS. The project consists of three pages:
 
-Home
+Home (index.html)
 
-Products
+Products (products.html)
 
-Contact
+Contact (contact.html)
 
 Features
 
