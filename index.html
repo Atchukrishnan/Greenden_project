@@ -13,7 +13,7 @@
     <!-- Responsive Nav bar -->
     <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-30">
         <h1 class="text-xl">GREENDEN</h1>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             class="h-6 w-6 md:hidden cursor-pointer">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
@@ -24,6 +24,18 @@
             <li><a href="./contact.html" class="hover:underline hover:text-black">Contact</a></li>
         </ul>
     </nav>
+    <!-- Side navbar -->
+    <section id="sidenav" class="bg-green-100 fixed z-40  top-0 transition-all duration-1000" style="width: 50%;height: 100vh; right: -50%;">
+        <div class="text-right"> 
+            <p id="closenav" class="cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col gap-10 text-gray-600 items-center">
+            <li><a href="./index.html" class="hover:underline hover:text-black">Home</a></li>
+            <li><a href="./product.html" class="hover:underline hover:text-black">Products</a></li>
+            <li><a href="./contact.html" class="hover:underline hover:text-black">Contact</a></li>
+        </ul>
+    </section>
+
     <!-- Header section -->
     <section class="bg-green-100 p-4 md:p-10 flex justify-center">
         <div>
@@ -85,64 +97,77 @@
         </div>
     </section>
     <!-- Best seller -->
-     <section class="p-4 text-center">
+    <section class="p-4 text-center">
         <h2 class="font-bold text-3xl mt-2">Best Sellers</h2>
         <div class="grid grid-cols-2 mt-5 gap-4 md:grid-cols-4">
             <div>
-                <img src="./Images/bestseller_1.jpg" alt="Rose plant" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <img src="./Images/bestseller_1.jpg" alt="Rose plant"
+                    class="inline hover:shadow-xl transform hover:-translate-y-2">
                 <p>Rose Plant</p>
                 <p>$20</p>
             </div>
             <div>
-                <img src="./Images/bestseller_2.jpg" alt="Lily plant" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <img src="./Images/bestseller_2.jpg" alt="Lily plant"
+                    class="inline hover:shadow-xl transform hover:-translate-y-2">
                 <p>Lily Plant</p>
                 <p>$25</p>
             </div>
             <div>
-                <img src="./Images/bestseller_3.jpg" alt="Hibiscus Rose" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <img src="./Images/bestseller_3.jpg" alt="Hibiscus Rose"
+                    class="inline hover:shadow-xl transform hover:-translate-y-2">
                 <p>Hibiscus Rose</p>
                 <p>$30</p>
             </div>
             <div>
-                <img src="./Images/bestseller_4.jpg" alt="New pet plant" class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <img src="./Images/bestseller_4.jpg" alt="New pet plant"
+                    class="inline hover:shadow-xl transform hover:-translate-y-2">
                 <p>New pet plant</p>
                 <p>$45</p>
             </div>
-           
+
         </div>
 
-     </section>
-     <!-- Customer Reviews -->
-      <section class="p-4 mt-3">
+    </section>
+    <!-- Customer Reviews -->
+    <section class="p-4 mt-3">
         <h2 class="text-center text-3xl font-bold">Customer Reviews</h2>
         <div class="grid grid-cols-1 gap-3 mt-5">
             <div class="bg-green-900 text-white p-4">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem aliquid laudantium mollitia pariatur dignissimos, est obcaecati ex consequatur quae. Esse sequi animi deserunt quas rem cupiditate asperiores amet suscipit voluptatibus.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem aliquid laudantium mollitia pariatur
+                    dignissimos, est obcaecati ex consequatur quae. Esse sequi animi deserunt quas rem cupiditate
+                    asperiores amet suscipit voluptatibus.</p>
                 <p class="text-yellow-200 font-bold">Genny Mathew</p>
             </div>
             <div class="bg-green-900 text-white p-4">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem aliquid laudantium mollitia pariatur dignissimos, est obcaecati ex consequatur quae. Esse sequi animi deserunt quas rem cupiditate asperiores amet suscipit voluptatibus.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem aliquid laudantium mollitia pariatur
+                    dignissimos, est obcaecati ex consequatur quae. Esse sequi animi deserunt quas rem cupiditate
+                    asperiores amet suscipit voluptatibus.</p>
                 <p class="text-yellow-200 font-bold">Jim</p>
             </div>
             <div class="bg-green-900 text-white p-4">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem aliquid laudantium mollitia pariatur dignissimos, est obcaecati ex consequatur quae. Esse sequi animi deserunt quas rem cupiditate asperiores amet suscipit voluptatibus.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem aliquid laudantium mollitia pariatur
+                    dignissimos, est obcaecati ex consequatur quae. Esse sequi animi deserunt quas rem cupiditate
+                    asperiores amet suscipit voluptatibus.</p>
                 <p class="text-yellow-200 font-bold">Amir</p>
             </div>
         </div>
-      </section>
-      <!-- News letter -->
-       <section class="p-4 text-center">
+    </section>
+    <!-- News letter -->
+    <section class="p-4 text-center">
         <h2 class="text-3xl font-bold">Join our News Letter</h2>
         <p>Signup for our email newspaper to get exclusive discounts, updates, and more</p>
         <input type="text" class="border border-black p-2 mt-4 w-8/12"><br>
         <button class="bg-black text-white underline p-2 mt-4">Subscribe</button>
-       </section>
-       <!-- Footer -->
-        <div class="bg-green-100 p-10 flex flex-col gap-5">
+    </section>
+    <!-- Footer -->
+    <div class="bg-green-100 p-10 flex flex-col gap-5">
         <h1 class="text-4xl font-bold">Greenden</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto reprehenderit corporis atque incidunt corrupti nihil?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto reprehenderit corporis atque incidunt
+            corrupti nihil?</p>
         <p>&copy;2025 Greenday.com</p>
     </div>
+
+    <script src="index.js"></script>
 </body>
 
 </html>

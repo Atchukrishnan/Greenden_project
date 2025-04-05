@@ -13,7 +13,7 @@
     <!-- Nav Bar -->
     <nav class="bg-green-100 p-3 flex items-center justify-between  sticky top-0 shadow-xl z-10">
         <h1 class="text-xl">GREENDEN</h1>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             class="h-6 w-6  md:hidden ">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
@@ -23,11 +23,22 @@
             <li class="text-gray-600 hover:underline hover:text-black"><a href="./contact.html">Contact</a></li>
         </ul>
     </nav>
+    <!-- Side navbar -->
+    <section id="sidenav" class="bg-green-100 fixed z-40  top-0 transition-all duration-1000" style="width: 50%;height: 100vh; right: -50%;">
+        <div class="text-right"> 
+            <p id="closenav" class="cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col gap-10 text-gray-600 items-center">
+            <li><a href="./index.html" class="hover:underline hover:text-black">Home</a></li>
+            <li><a href="./product.html" class="hover:underline hover:text-black">Products</a></li>
+            <li><a href="./contact.html" class="hover:underline hover:text-black">Contact</a></li>
+        </ul>
+    </section>
     <!-- Products -->
      <section class="p-4 text-center">
      <h2 class="font-bold text-3xl mt-2">Our Products</h2>
-     <input type="text" placeholder="Search for a Product..." class="border border-black p-2 m-5 w-8/12">
-     <div class="grid grid-cols-2 md:grid-cols-4 p-4 items-center justify-center gap-6">
+     <input id="search" type="text" placeholder="Search for a Product..." class="border border-black p-2 m-5 w-8/12">
+     <div id="product-container" class="grid grid-cols-2 md:grid-cols-4 p-4 items-center justify-center gap-6">
         <div>
             <img src="./Images/product_1.png" alt="Zebra Plant" class="inline transform hover:-translate-y-2" >
             <p>Zebra Plant</p>
@@ -77,6 +88,7 @@
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto reprehenderit corporis atque incidunt corrupti nihil?</p>
         <p>&copy;2025 Greenday.com</p>
     </div>
+    <script src="product.js"></script>
 
 
 </body>
